@@ -1,17 +1,17 @@
 # 氷菓 ― Hyouka Fan Site
 
-A Y2K kawaii-styled fan site dedicated to the anime *Hyouka* (氷菓), built with modern web technologies and retro aesthetics.
+A Y2K kawaii-styled fan site dedicated to the anime _Hyouka_ (氷菓), built with modern web technologies and retro aesthetics. view demo：https://yuuki.diy/hyouka
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 16 (App Router) |
-| UI | React 19 + TypeScript |
-| Styling | Tailwind CSS 4 + DaisyUI 5 |
-| Animation | Motion (Framer Motion) |
-| Blog | MDX (next-mdx-remote + gray-matter) |
-| Fonts | DotGothic16 (pixel) + Noto Sans JP (body) |
+| Layer     | Technology                                |
+| --------- | ----------------------------------------- |
+| Framework | Next.js 16 (App Router)                   |
+| UI        | React 19 + TypeScript                     |
+| Styling   | Tailwind CSS 4 + DaisyUI 5                |
+| Animation | Motion (Framer Motion)                    |
+| Blog      | MDX (next-mdx-remote + gray-matter)       |
+| Fonts     | DotGothic16 (pixel) + Noto Sans JP (body) |
 
 ## Features
 
@@ -103,4 +103,4 @@ Markdown content here...
 
 ## License
 
-This is a fan project. *Hyouka* (氷菓) is created by Honobu Yonezawa and animated by Kyoto Animation.
+This is a fan project. _Hyouka_ (氷菓) is created by Honobu Yonezawa and animated by Kyoto Animation.
