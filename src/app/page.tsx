@@ -25,31 +25,18 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Photo Grid */}
+      {/* Hero Image */}
       <div>
-        <SectionHeading icon="✦">Photos</SectionHeading>
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {[
-            { src: "/images/gallery/1.jpg", alt: "Photo 1" },
-            { src: "/images/gallery/2.jpg", alt: "Photo 2" },
-            { src: "/images/gallery/3.jpg", alt: "Photo 3" },
-            { src: "/images/gallery/4.jpg", alt: "Photo 4" },
-            { src: "/images/gallery/5.jpg", alt: "Photo 5" },
-            { src: "/images/gallery/6.jpg", alt: "Photo 6" },
-          ].map((photo) => (
-            <div
-              key={photo.src}
-              className="card aspect-square overflow-hidden border border-dashed border-primary/30 bg-base-200 transition-all hover:border-primary/60 hover:shadow-sm"
-            >
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                width={400}
-                height={400}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          ))}
+        <SectionHeading icon="✦">Photo</SectionHeading>
+        <div className="mt-4 overflow-hidden rounded-box border-2 border-dashed border-primary/30 bg-base-200 transition-all hover:border-primary/60 hover:shadow-sm">
+          <Image
+            src="/images/gallery/hero.jpg"
+            alt="Hero photo"
+            width={1200}
+            height={600}
+            className="h-auto w-full object-cover"
+            priority
+          />
         </div>
       </div>
 

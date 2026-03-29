@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { useState, useEffect } from "react";
 
 interface StickerProps {
   type?: "star" | "heart" | "flower" | "sparkle";
@@ -26,7 +27,13 @@ export default function Sticker({
   size = "md",
   className = "",
 }: StickerProps) {
-  const randomRotation = Math.random() * 10 - 5;
+  const [randomRotation, setRandomRotation] = useState(0);
+  const [animDuration, setAnimDuration] = useState(3);
+
+  useEffect(() => {
+    setRandomRotation(Math.random() * 10 - 5);
+    setAnimDuration(2 + Math.random() * 2);
+  }, []);
 
   return (
     <motion.span
@@ -37,7 +44,7 @@ export default function Sticker({
         y: [0, -3, 0],
       }}
       transition={{
-        y: { duration: 2 + Math.random() * 2, repeat: Infinity, ease: "easeInOut" },
+        y: { duration: animDuration, repeat: Infinity, ease: "easeInOut" },
       }}
     >
       {stickerEmoji[type]}
