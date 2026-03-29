@@ -62,7 +62,8 @@ export function useAudioPlayer(playlist: PlaylistTrack[]) {
     if (state.isPlaying) {
       audio.play().catch(() => {});
     }
-  }, [state.currentTrackIndex, playlist]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.currentTrackIndex, playlist, state.isPlaying]);
 
   const play = useCallback(() => {
     audioRef.current?.play().catch(() => {});
@@ -80,24 +81,26 @@ export function useAudioPlayer(playlist: PlaylistTrack[]) {
   }, [state.isPlaying, play, pause]);
 
   const next = useCallback(() => {
-    setState((prev) => {
-      const nextIndex = (prev.currentTrackIndex + 1) % playlist.length;
+    setState((s) => {
+      const nextIndex = (s.currentTrackIndex + 1) % playlist.length;
       return {
-        ...prev,
+        ...s,
         currentTrackIndex: nextIndex,
         currentTrack: playlist[nextIndex],
+        isPlaying: true,
       };
     });
   }, [playlist]);
 
   const prev = useCallback(() => {
-    setState((prev) => {
+    setState((s) => {
       const prevIndex =
-        (prev.currentTrackIndex - 1 + playlist.length) % playlist.length;
+        (s.currentTrackIndex - 1 + playlist.length) % playlist.length;
       return {
-        ...prev,
+        ...s,
         currentTrackIndex: prevIndex,
         currentTrack: playlist[prevIndex],
+        isPlaying: true,
       };
     });
   }, [playlist]);

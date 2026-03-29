@@ -23,8 +23,8 @@ export default function About() {
         </p>
         <p className="mt-2 text-base-content/70">
           主角折木奉太郎信奉「節能主義」，卻因姐姐的一封信加入了古典部，
-          並遇見了好奇心旺盛的千反田愛瑠。「わたし、気になります！」
-          ― 由此展開了一段灰色而非薔薇色的青春故事。
+          並遇見了好奇心旺盛的千反田愛瑠。「わたし、気になります！」 ―
+          由此展開了一段灰色而非薔薇色的青春故事。
         </p>
       </div>
 
@@ -35,10 +35,26 @@ export default function About() {
         </h3>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {[
-            { name: "折木奉太郎", role: "節能主義的推理天才", color: "primary" as const },
-            { name: "千反田愛瑠", role: "好奇心旺盛的大小姐", color: "secondary" as const },
-            { name: "福部里志", role: "自稱資料庫的萬事通", color: "accent" as const },
-            { name: "伊原摩耶花", role: "直率認真的漫研少女", color: "primary" as const },
+            {
+              name: "折木奉太郎",
+              role: "節能主義的推理天才",
+              color: "primary" as const,
+            },
+            {
+              name: "千反田愛瑠",
+              role: "好奇心旺盛的大小姐",
+              color: "secondary" as const,
+            },
+            {
+              name: "福部里志",
+              role: "自稱資料庫的萬事通",
+              color: "accent" as const,
+            },
+            {
+              name: "伊原摩耶花",
+              role: "直率認真的漫研少女",
+              color: "primary" as const,
+            },
           ].map((char) => (
             <div
               key={char.name}
@@ -51,7 +67,7 @@ export default function About() {
               <div className="mt-2">
                 <BadgeTag color={char.color}>古典部</BadgeTag>
               </div>
-            </div>
+            </div>  
           ))}
         </div>
       </div>
