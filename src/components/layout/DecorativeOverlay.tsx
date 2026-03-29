@@ -3,6 +3,8 @@
 import FloatingDecoration from "@/components/decorations/FloatingDecoration";
 import Sticker from "@/components/decorations/Sticker";
 
+/* eslint-disable @next/next/no-img-element */
+
 export default function DecorativeOverlay() {
   return (
     <div className="pointer-events-none fixed inset-0 z-50 overflow-hidden">
@@ -13,7 +15,7 @@ export default function DecorativeOverlay() {
         duration={4}
         delay={0}
       >
-        <Sticker type="star" size="lg" />
+        <img src="https://img.yuuki.diy/gameboy.png" alt="" className="w-12 opacity-70" />
       </FloatingDecoration>
 
       <FloatingDecoration
@@ -22,7 +24,7 @@ export default function DecorativeOverlay() {
         duration={3.5}
         delay={0.5}
       >
-        <Sticker type="sparkle" size="md" />
+        <img src="https://img.yuuki.diy/tuoma.png" alt="" className="w-10 opacity-70" />
       </FloatingDecoration>
 
       {/* Bottom-left decorations */}
