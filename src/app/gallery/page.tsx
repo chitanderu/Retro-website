@@ -9,7 +9,7 @@ const galleryItems = [
   {
     id: 1,
     title: "千反田愛瑠",
-    src: "https://img.yuuki.diy/images.jpeg ",
+    src: "https://img.yuuki.diy/images.jpeg",
   },
   {
     id: 2,
