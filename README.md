@@ -1,6 +1,10 @@
 # 氷菓 ― Hyouka Fan Site
 
+**[中文版](./README_ZH.md)** | English
+
 A Y2K kawaii-styled fan site dedicated to the anime _Hyouka_ (氷菓), built with modern web technologies and retro aesthetics. view demo：https://yuuki.diy/hyouka
+
+![Demo Screenshot](https://img.yuuki.diy/%E6%88%AA%E5%B1%8F2026-03-29%2017.50.16.png)
 
 ## Tech Stack
 
