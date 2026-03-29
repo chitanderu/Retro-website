@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function VisitorCounter() {
   const [count, setCount] = useState(0);
   const [target, setTarget] = useState(0);
@@ -10,14 +12,12 @@ export default function VisitorCounter() {
     const visited = sessionStorage.getItem("visited");
 
     if (visited) {
-      // Already counted this session, just fetch current count
-      fetch("/api/counter")
+      fetch(`${base}/api/counter`)
         .then((res) => res.json())
         .then((data) => setTarget(data.count))
         .catch(() => {});
     } else {
-      // New visit, increment counter
-      fetch("/api/counter", { method: "POST" })
+      fetch(`${base}/api/counter`, { method: "POST" })
         .then((res) => res.json())
         .then((data) => {
           setTarget(data.count);
