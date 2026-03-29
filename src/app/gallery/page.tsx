@@ -9,7 +9,7 @@ const galleryItems = [
   {
     id: 1,
     title: "千反田愛瑠",
-    src: "https://img.yuuki.diy/danta.png",
+    src: "https://img.yuuki.diy/images.jpeg ",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const galleryItems = [
   },
   {
     id: 4,
-    title: "千反田愛瑠",
+    title: "千反田愛瑠-GIF",
     src: "https://img.yuuki.diy/X2Twitter.com_HATHXNZa4AAsqZx_gif.gif",
   },
   {
