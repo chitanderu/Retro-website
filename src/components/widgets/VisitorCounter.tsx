@@ -4,18 +4,41 @@ import { useEffect, useState } from "react";
 
 export default function VisitorCounter() {
   const [count, setCount] = useState(0);
-  const target = 1042;
+  const [target, setTarget] = useState(0);
 
   useEffect(() => {
+    const visited = sessionStorage.getItem("visited");
+
+    if (visited) {
+      // Already counted this session, just fetch current count
+      fetch("/api/counter")
+        .then((res) => res.json())
+        .then((data) => setTarget(data.count))
+        .catch(() => {});
+    } else {
+      // New visit, increment counter
+      fetch("/api/counter", { method: "POST" })
+        .then((res) => res.json())
+        .then((data) => {
+          setTarget(data.count);
+          sessionStorage.setItem("visited", "1");
+        })
+        .catch(() => {});
+    }
+  }, []);
+
+  // Rolling number animation
+  useEffect(() => {
+    if (target === 0) return;
+    const step = Math.max(1, Math.ceil(target / 30));
     let current = 0;
-    const step = Math.ceil(target / 30);
     const interval = setInterval(() => {
       current = Math.min(current + step, target);
       setCount(current);
       if (current >= target) clearInterval(interval);
     }, 50);
     return () => clearInterval(interval);
-  }, []);
+  }, [target]);
 
   const digits = count.toString().padStart(6, "0");
 

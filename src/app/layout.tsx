@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notoSansJP, pixelFont } from "@/lib/fonts";
 import MainLayout from "@/components/layout/MainLayout";
+import HeroSplash from "@/components/ui/HeroSplash";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
       className={`${notoSansJP.variable} ${pixelFont.variable}`}
     >
       <body className="min-h-screen bg-base-100 font-body">
+        <HeroSplash />
         <MainLayout>{children}</MainLayout>
       </body>
     </html>
