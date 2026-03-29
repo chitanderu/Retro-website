@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: "/hyouka",
+  assetPrefix: "/hyouka",
+  output: "standalone",
   images: {
     remotePatterns: [
       {
