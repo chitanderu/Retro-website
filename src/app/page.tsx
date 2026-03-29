@@ -16,12 +16,12 @@ export default function Home() {
         <SparkleEffect count={4} />
         <Stamp variant={1} rotation={8} className="right-3 top-3" />
         <h1 className="font-[family-name:var(--font-pixel-mplus)] text-3xl text-base-content">
-          ☆ Welcome to My Site ☆
+          ☆ 氷菓 ― Hyouka ☆
         </h1>
         <p className="mt-3 text-base-content/70">
-          ようこそ！ Welcome to my little corner of the internet.
-          This is a Y2K-inspired personal website where I share my thoughts,
-          projects, and favorite things. Feel free to look around! ✿
+          わたし、気になります！ Welcome to a fan site dedicated to
+          the anime Hyouka (氷菓). Explore the world of Kamiyama High School&apos;s
+          Classic Literature Club and their everyday mysteries. ✿
         </p>
       </div>
 
@@ -82,10 +82,9 @@ export default function Home() {
         <SectionHeading icon="♡">Explore</SectionHeading>
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
           {[
-            { href: "/blog", label: "Blog ✎", desc: "Read my posts" },
-            { href: "/gallery", label: "Gallery ✦", desc: "See my work" },
-            { href: "/friends", label: "Friends ♡", desc: "Cool sites" },
-            { href: "/about", label: "About ☆", desc: "Know me" },
+            { href: "/blog", label: "Blog ✎", desc: "Articles & analysis" },
+            { href: "/gallery", label: "Gallery ✦", desc: "Scenes & artwork" },
+            { href: "/about", label: "About ☆", desc: "About this site" },
           ].map((link) => (
             <Link key={link.href} href={link.href}>
               <div className="card border border-dotted border-secondary/30 bg-base-200 p-3 text-center transition-all hover:border-secondary/60 hover:shadow-sm">

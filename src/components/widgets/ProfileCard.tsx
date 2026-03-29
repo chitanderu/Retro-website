@@ -24,29 +24,29 @@ export default function ProfileCard() {
         {/* Name */}
         <div className="text-center">
           <h3 className="font-[family-name:var(--font-pixel-mplus)] text-base text-base-content">
-            Your Name
+            古典部
           </h3>
           <p className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/50">
-            @handle
+            Classics Club
           </p>
         </div>
 
         {/* Bio */}
         <p className="text-center text-xs text-base-content/60">
-          A short bio about yourself goes here ✿
+          神山高校古典部の活動記録 ✿
         </p>
 
         {/* Status */}
         <div className="flex items-center gap-1.5">
           <span className="inline-block h-2 w-2 rounded-full bg-success" />
           <span className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/50">
-            ONLINE
+            活動中
           </span>
         </div>
 
-        {/* Social Icons */}
+        {/* Tags */}
         <div className="flex gap-2">
-          {["GitHub", "Twitter"].map((name) => (
+          {["京アニ", "推理"].map((name) => (
             <span
               key={name}
               className="badge badge-outline badge-sm font-[family-name:var(--font-pixel-mplus)] text-xs"

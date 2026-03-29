@@ -7,7 +7,6 @@ const navLinks = [
   { href: "/", label: "Home", icon: "⌂" },
   { href: "/blog", label: "Blog", icon: "✎" },
   { href: "/gallery", label: "Gallery", icon: "✦" },
-  { href: "/friends", label: "Friends", icon: "♡" },
   { href: "/about", label: "About", icon: "☆" },
 ];
 
@@ -22,7 +21,7 @@ export default function Navbar() {
           href="/"
           className="font-[family-name:var(--font-pixel-mplus)] text-xl text-base-content transition-transform hover:scale-105"
         >
-          ✧ MySite ✧
+          ✧ 氷菓 ✧
         </Link>
 
         {/* Desktop Nav Links */}
@@ -69,8 +68,7 @@ export default function Navbar() {
       {/* Marquee */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden border-t border-dotted border-secondary/30 bg-base-200/50 py-0.5">
         <div className="animate-[marquee_20s_linear_infinite] whitespace-nowrap font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
-          ☆ Welcome to my personal site! ☆ ようこそ！ ☆ Feel free to look
-          around ☆ 信号接収中——ぽっぴぽっぴ ☆
+          ☆ 氷菓 ― Hyouka Fan Site ☆ わたし、気になります！ ☆ 古典部へようこそ ☆ 薔薇色の人生を ☆
         </div>
       </div>
     </nav>

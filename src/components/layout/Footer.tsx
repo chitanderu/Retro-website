@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
 
         <p className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/30">
-          &copy; 2025 ✧ made with ♡
+          &copy; 2025 ✧ 氷菓 Fan Site ― made with ♡
         </p>
       </div>
     </footer>
