@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getBlogPosts } from "@/lib/mdx";
 import SectionHeading from "@/components/ui/SectionHeading";
 import BadgeTag from "@/components/ui/BadgeTag";
@@ -22,6 +23,34 @@ export default function Home() {
           This is a Y2K-inspired personal website where I share my thoughts,
           projects, and favorite things. Feel free to look around! ✿
         </p>
+      </div>
+
+      {/* Photo Grid */}
+      <div>
+        <SectionHeading icon="✦">Photos</SectionHeading>
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {[
+            { src: "/images/gallery/1.jpg", alt: "Photo 1" },
+            { src: "/images/gallery/2.jpg", alt: "Photo 2" },
+            { src: "/images/gallery/3.jpg", alt: "Photo 3" },
+            { src: "/images/gallery/4.jpg", alt: "Photo 4" },
+            { src: "/images/gallery/5.jpg", alt: "Photo 5" },
+            { src: "/images/gallery/6.jpg", alt: "Photo 6" },
+          ].map((photo) => (
+            <div
+              key={photo.src}
+              className="card aspect-square overflow-hidden border border-dashed border-primary/30 bg-base-200 transition-all hover:border-primary/60 hover:shadow-sm"
+            >
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={400}
+                height={400}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Recent Posts */}

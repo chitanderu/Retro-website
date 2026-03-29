@@ -17,15 +17,8 @@ export default function MainLayout({
         <Navbar />
 
         {/* Main Content Area */}
-        <div className="mx-auto grid w-full max-w-6xl flex-1 gap-6 px-4 py-6 lg:grid-cols-[1fr_280px]">
+        <div className="mx-auto w-full max-w-4xl flex-1 px-4 py-6">
           <main className="min-w-0">{children}</main>
-
-          {/* Desktop Sidebar */}
-          <div className="hidden lg:block">
-            <div className="sticky top-20">
-              <Sidebar />
-            </div>
-          </div>
         </div>
 
         {/* Footer */}
@@ -35,15 +28,17 @@ export default function MainLayout({
         <DecorativeOverlay />
       </div>
 
-      {/* Mobile Sidebar Drawer */}
+      {/* Sidebar — drawer handles both mobile (overlay) and desktop (persistent) */}
       <div className="drawer-side z-50">
         <label
           htmlFor="sidebar-drawer"
           aria-label="close sidebar"
           className="drawer-overlay"
         />
-        <div className="min-h-full w-72 bg-base-100 p-4">
-          <Sidebar />
+        <div className="min-h-full w-72 border-r border-dashed border-secondary/20 bg-base-100 p-4 pt-20">
+          <div className="sticky top-20">
+            <Sidebar />
+          </div>
         </div>
       </div>
     </div>
