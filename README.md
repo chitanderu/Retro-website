@@ -120,7 +120,7 @@ The `Y2KCard` component makes this a reusable pattern with configurable `borderS
 The `DotGothic16` font from Google Fonts is loaded in `lib/fonts.ts` and assigned to the CSS variable `--font-pixel-mplus`. It's applied to all headings, nav links, and decorative text via Tailwind:
 
 ```tsx
-<h1 className="font-[family-name:var(--font-pixel-mplus)] text-3xl">
+<h1 className="font-pixel text-3xl">
   ☆ Welcome to My Site ☆
 </h1>
 ```
@@ -205,7 +205,7 @@ A single section on the homepage combines all these techniques:
   {/* 2. Stamp decoration */}
   <Stamp variant={1} rotation={8} className="right-3 top-3" />
   {/* 3. Pixel font heading with emoji brackets */}
-  <h1 className="font-[family-name:var(--font-pixel-mplus)] text-3xl">
+  <h1 className="font-pixel text-3xl">
     ☆ Welcome to My Site ☆
   </h1>
   {/* 4. Body text in clean font, low-opacity color */}

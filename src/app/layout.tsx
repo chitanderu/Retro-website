@@ -19,7 +19,7 @@ export default function RootLayout({
       data-theme="hyouka"
       className={`${notoSansJP.variable} ${pixelFont.variable}`}
     >
-      <body className="min-h-screen bg-base-100 font-[family-name:var(--font-noto-sans-jp)]">
+      <body className="min-h-screen bg-base-100 font-body">
         <MainLayout>{children}</MainLayout>
       </body>
     </html>

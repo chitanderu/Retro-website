@@ -36,13 +36,13 @@ export default function MusicPlayer() {
         {/* LCD Screen */}
         <div className="rounded-lg border border-base-content/10 bg-base-100 p-3 shadow-inner">
           {/* Track Info */}
-          <p className="font-[family-name:var(--font-pixel-mplus)] text-[10px] text-base-content/40">
+          <p className="font-pixel text-[10px] text-base-content/40">
             ♪ Now Playing
           </p>
-          <p className="truncate font-[family-name:var(--font-pixel-mplus)] text-sm text-base-content">
+          <p className="truncate font-pixel text-sm text-base-content">
             {currentTrack?.title ?? "No track"}
           </p>
-          <p className="truncate font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/50">
+          <p className="truncate font-pixel text-xs text-base-content/50">
             {currentTrack?.artist ?? "—"}
           </p>
 
@@ -55,7 +55,7 @@ export default function MusicPlayer() {
           </div>
 
           {/* Time */}
-          <div className="mt-1 flex justify-between font-[family-name:var(--font-pixel-mplus)] text-[10px] text-base-content/40">
+          <div className="mt-1 flex justify-between font-pixel text-[10px] text-base-content/40">
             <span>{formatTime(currentTime)}</span>
             <span>{formatTime(duration)}</span>
           </div>
@@ -67,7 +67,7 @@ export default function MusicPlayer() {
           <div className="relative flex h-full w-full items-center justify-center">
             {/* Top - Menu */}
             <button
-              className="absolute top-2 font-[family-name:var(--font-pixel-mplus)] text-[8px] text-base-content/40 transition-colors hover:text-base-content/70"
+              className="absolute top-2 font-pixel text-[8px] text-base-content/40 transition-colors hover:text-base-content/70"
               aria-label="Menu"
             >
               MENU
@@ -99,7 +99,7 @@ export default function MusicPlayer() {
 
             {/* Bottom - placeholder */}
             <button
-              className="absolute bottom-2 font-[family-name:var(--font-pixel-mplus)] text-[8px] text-base-content/40 transition-colors hover:text-base-content/70"
+              className="absolute bottom-2 font-pixel text-[8px] text-base-content/40 transition-colors hover:text-base-content/70"
               aria-label="Playlist"
             >
               ☰

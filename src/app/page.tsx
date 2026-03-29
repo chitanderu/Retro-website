@@ -15,23 +15,23 @@ export default function Home() {
       <div className="card relative border-2 border-dashed border-secondary/40 bg-base-200 p-6">
         <SparkleEffect count={4} />
         <Stamp variant={1} rotation={8} className="right-3 top-3" />
-        <h1 className="font-[family-name:var(--font-pixel-mplus)] text-3xl text-base-content">
+        <h1 className="font-pixel text-3xl text-base-content">
           ☆ 氷菓 ― Hyouka ☆
         </h1>
         <p className="mt-3 text-base-content/70">
-          わたし、気になります！ Welcome to a fan site dedicated to
-          the anime Hyouka (氷菓). Explore the world of Kamiyama High School&apos;s
+          わたし、気になります！ Welcome to a fan site dedicated to the anime
+          Hyouka (氷菓). Explore the world of Kamiyama High School&apos;s
           Classic Literature Club and their everyday mysteries. ✿
         </p>
       </div>
 
       {/* Hero Image */}
       <div>
-        <SectionHeading icon="✦">Photo</SectionHeading>
+        <SectionHeading icon="✦">Show</SectionHeading>
         <div className="mt-4 overflow-hidden rounded-box border-2 border-dashed border-primary/30 bg-base-200 transition-all hover:border-primary/60 hover:shadow-sm">
           <Image
-            src="/images/gallery/hero.jpg"
-            alt="Hero photo"
+            src="https://img.yuuki.diy/hero.jpg"
+            alt="氷菓 Hyouka"
             width={1200}
             height={600}
             className="h-auto w-full object-cover"
@@ -50,14 +50,14 @@ export default function Home() {
                 <div className="card border border-dashed border-primary/30 bg-base-200 p-4 transition-colors hover:border-primary/60 hover:bg-base-200/80">
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <h3 className="font-[family-name:var(--font-pixel-mplus)] text-base text-base-content">
+                      <h3 className="font-pixel text-base text-base-content">
                         {post.title}
                       </h3>
                       <p className="mt-1 text-sm text-base-content/50">
                         {post.description}
                       </p>
                     </div>
-                    <span className="shrink-0 font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/30">
+                    <span className="shrink-0 font-pixel text-xs text-base-content/30">
                       {post.date}
                     </span>
                   </div>
@@ -88,7 +88,7 @@ export default function Home() {
           ].map((link) => (
             <Link key={link.href} href={link.href}>
               <div className="card border border-dotted border-secondary/30 bg-base-200 p-3 text-center transition-all hover:border-secondary/60 hover:shadow-sm">
-                <p className="font-[family-name:var(--font-pixel-mplus)] text-sm text-base-content">
+                <p className="font-pixel text-sm text-base-content">
                   {link.label}
                 </p>
                 <p className="text-xs text-base-content/40">{link.desc}</p>

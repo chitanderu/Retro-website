@@ -24,10 +24,10 @@ export default function Clock() {
 
   return (
     <div className="card border-2 border-dotted border-accent/40 bg-base-200 p-3 text-center">
-      <p className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+      <p className="font-pixel text-xs text-base-content/40">
         ⏰ Current Time
       </p>
-      <p className="font-[family-name:var(--font-pixel-mplus)] text-lg tabular-nums text-base-content">
+      <p className="font-pixel text-lg tabular-nums text-base-content">
         {time}
       </p>
     </div>

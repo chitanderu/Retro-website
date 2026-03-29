@@ -18,7 +18,7 @@ export default function BadgeTag({
 }: BadgeTagProps) {
   return (
     <span
-      className={`badge ${colorMap[color]} font-[family-name:var(--font-pixel-mplus)] text-xs ${className}`}
+      className={`badge ${colorMap[color]} font-pixel text-xs ${className}`}
     >
       {children}
     </span>

@@ -31,11 +31,11 @@ export default function Friends() {
 
               <div className="flex items-center gap-3">
                 {/* Avatar placeholder */}
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-dotted border-secondary/40 bg-base-300 font-[family-name:var(--font-pixel-mplus)] text-sm">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-dotted border-secondary/40 bg-base-300 font-pixel text-sm">
                   {friend.name[0]}
                 </div>
                 <div>
-                  <p className="font-[family-name:var(--font-pixel-mplus)] text-sm text-base-content group-hover:text-primary-content">
+                  <p className="font-pixel text-sm text-base-content group-hover:text-primary-content">
                     {friend.name}
                   </p>
                   <p className="text-xs text-base-content/50">
@@ -50,14 +50,14 @@ export default function Friends() {
 
       {/* Link Exchange Banner */}
       <div className="card border-2 border-dotted border-secondary/30 bg-base-200/50 p-4 text-center">
-        <p className="font-[family-name:var(--font-pixel-mplus)] text-sm text-base-content/50">
+        <p className="font-pixel text-sm text-base-content/50">
           ✦ Want to be friends? ✦
         </p>
         <p className="mt-1 text-xs text-base-content/40">
           Add my button to your site and let me know!
         </p>
         <div className="mt-2 flex justify-center">
-          <div className="flex h-[31px] w-[88px] items-center justify-center rounded border border-dashed border-secondary/40 bg-base-300 font-[family-name:var(--font-pixel-mplus)] text-[7px] text-base-content/50">
+          <div className="flex h-[31px] w-[88px] items-center justify-center rounded border border-dashed border-secondary/40 bg-base-300 font-pixel text-[7px] text-base-content/50">
             MY BUTTON
           </div>
         </div>

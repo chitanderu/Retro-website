@@ -13,7 +13,7 @@ export default function About() {
         <TapeStrip position="top-left" rotation={-10} color="secondary" />
         <Stamp variant={2} rotation={12} className="right-4 top-4" />
 
-        <h3 className="font-[family-name:var(--font-pixel-mplus)] text-lg text-base-content">
+        <h3 className="font-pixel text-lg text-base-content">
           氷菓 ― Hyouka ✿
         </h3>
         <p className="mt-3 text-base-content/70">
@@ -30,7 +30,7 @@ export default function About() {
 
       {/* Characters */}
       <div>
-        <h3 className="mb-3 font-[family-name:var(--font-pixel-mplus)] text-base text-base-content">
+        <h3 className="mb-3 font-pixel text-base text-base-content">
           ✦ Characters
         </h3>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -44,7 +44,7 @@ export default function About() {
               key={char.name}
               className="card border border-dashed border-primary/30 bg-base-200 p-4"
             >
-              <p className="font-[family-name:var(--font-pixel-mplus)] text-sm text-base-content">
+              <p className="font-pixel text-sm text-base-content">
                 {char.name}
               </p>
               <p className="mt-1 text-xs text-base-content/50">{char.role}</p>
@@ -58,7 +58,7 @@ export default function About() {
 
       {/* Keywords */}
       <div>
-        <h3 className="mb-3 font-[family-name:var(--font-pixel-mplus)] text-base text-base-content">
+        <h3 className="mb-3 font-pixel text-base text-base-content">
           ✦ Keywords
         </h3>
         <div className="flex flex-wrap gap-2">
@@ -81,30 +81,30 @@ export default function About() {
 
       {/* Anime Info */}
       <div className="card border-2 border-dotted border-accent/40 bg-base-200 p-5">
-        <h3 className="mb-3 font-[family-name:var(--font-pixel-mplus)] text-base text-base-content">
+        <h3 className="mb-3 font-pixel text-base text-base-content">
           ♡ Anime Info
         </h3>
         <div className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
           <div>
-            <span className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+            <span className="font-pixel text-xs text-base-content/40">
               Studio
             </span>
             <p className="text-base-content/70">京都アニメーション</p>
           </div>
           <div>
-            <span className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+            <span className="font-pixel text-xs text-base-content/40">
               Director
             </span>
             <p className="text-base-content/70">武本康弘</p>
           </div>
           <div>
-            <span className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+            <span className="font-pixel text-xs text-base-content/40">
               Episodes
             </span>
             <p className="text-base-content/70">TV 22話 + OVA 1話</p>
           </div>
           <div>
-            <span className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+            <span className="font-pixel text-xs text-base-content/40">
               Aired
             </span>
             <p className="text-base-content/70">2012年4月 ― 9月</p>
@@ -114,10 +114,10 @@ export default function About() {
 
       {/* Site Info */}
       <div className="card border border-dashed border-neutral/20 bg-base-200/50 p-4">
-        <h3 className="mb-2 font-[family-name:var(--font-pixel-mplus)] text-sm text-base-content/60">
+        <h3 className="mb-2 font-pixel text-sm text-base-content/60">
           ⌂ Site Info
         </h3>
-        <div className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+        <div className="font-pixel text-xs text-base-content/40">
           <p>Built with: Next.js + Tailwind CSS + DaisyUI</p>
           <p>Font: DotGothic16 + Noto Sans JP</p>
           <p>Aesthetic: Y2K Kawaii + 個人サイト</p>

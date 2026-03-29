@@ -12,7 +12,7 @@ export default function MarqueeText({
   return (
     <div className={`overflow-hidden ${className}`}>
       <div
-        className="whitespace-nowrap font-[family-name:var(--font-pixel-mplus)] text-xs"
+        className="whitespace-nowrap font-pixel text-xs"
         style={{ animation: `marquee ${speed}s linear infinite` }}
       >
         {children}

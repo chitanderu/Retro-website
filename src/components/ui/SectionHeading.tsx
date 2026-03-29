@@ -11,7 +11,7 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <h2
-      className={`flex items-center gap-2 font-[family-name:var(--font-pixel-mplus)] text-2xl text-base-content ${className}`}
+      className={`flex items-center gap-2 font-pixel text-2xl text-base-content ${className}`}
     >
       <span className="text-secondary">{icon}</span>
       {children}

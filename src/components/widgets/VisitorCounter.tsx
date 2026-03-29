@@ -24,7 +24,7 @@ export default function VisitorCounter() {
       {digits.split("").map((digit, i) => (
         <span
           key={i}
-          className="inline-block w-4 rounded-sm bg-base-300 py-0.5 text-center font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content"
+          className="inline-block w-4 rounded-sm bg-base-300 py-0.5 text-center font-pixel text-xs text-base-content"
         >
           {digit}
         </span>

@@ -17,14 +17,14 @@ export default function Blog() {
               <article className="card border-2 border-dashed border-primary/30 bg-base-200 p-5 transition-all hover:border-primary/60 hover:shadow-sm">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <h2 className="font-[family-name:var(--font-pixel-mplus)] text-lg text-base-content">
+                    <h2 className="font-pixel text-lg text-base-content">
                       {post.title}
                     </h2>
                     <p className="mt-1 text-sm text-base-content/60">
                       {post.description}
                     </p>
                   </div>
-                  <span className="shrink-0 font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/30">
+                  <span className="shrink-0 font-pixel text-xs text-base-content/30">
                     {post.date}
                   </span>
                 </div>

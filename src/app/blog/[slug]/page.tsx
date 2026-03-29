@@ -25,7 +25,7 @@ export default async function BlogPost({
       {/* Back Link */}
       <Link
         href="/blog"
-        className="inline-flex items-center gap-1 font-[family-name:var(--font-pixel-mplus)] text-sm text-base-content/50 transition-colors hover:text-base-content"
+        className="inline-flex items-center gap-1 font-pixel text-sm text-base-content/50 transition-colors hover:text-base-content"
       >
         ← Back to Blog
       </Link>
@@ -36,11 +36,11 @@ export default async function BlogPost({
 
         {/* Header */}
         <header className="mb-6">
-          <h1 className="font-[family-name:var(--font-pixel-mplus)] text-2xl text-base-content">
+          <h1 className="font-pixel text-2xl text-base-content">
             {post.title}
           </h1>
           <div className="mt-2 flex items-center gap-3">
-            <span className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+            <span className="font-pixel text-xs text-base-content/40">
               {post.date}
             </span>
             <div className="flex gap-1">
@@ -54,7 +54,7 @@ export default async function BlogPost({
         </header>
 
         {/* MDX Content */}
-        <div className="prose prose-sm max-w-none text-base-content/80 prose-headings:font-[family-name:var(--font-pixel-mplus)] prose-headings:text-base-content prose-a:text-primary prose-strong:text-base-content">
+        <div className="prose prose-sm max-w-none text-base-content/80 prose-headings:font-pixel prose-headings:text-base-content prose-a:text-primary prose-strong:text-base-content">
           <MDXRemote source={post.content} />
         </div>
       </article>

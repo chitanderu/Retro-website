@@ -19,7 +19,7 @@ export default function Navbar() {
         {/* Site Title */}
         <Link
           href="/"
-          className="font-[family-name:var(--font-pixel-mplus)] text-xl text-base-content transition-transform hover:scale-105"
+          className="font-pixel text-xl text-base-content transition-transform hover:scale-105"
         >
           ✧ 氷菓 ✧
         </Link>
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`btn btn-ghost btn-sm font-[family-name:var(--font-pixel-mplus)] text-sm ${
+              className={`btn btn-ghost btn-sm font-pixel text-sm ${
                 pathname === link.href
                   ? "bg-primary/30 text-primary-content"
                   : "text-base-content/70 hover:bg-primary/10"
@@ -67,7 +67,7 @@ export default function Navbar() {
 
       {/* Marquee */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden border-t border-dotted border-secondary/30 bg-base-200/50 py-0.5">
-        <div className="animate-[marquee_20s_linear_infinite] whitespace-nowrap font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/40">
+        <div className="animate-[marquee_20s_linear_infinite] whitespace-nowrap font-pixel text-xs text-base-content/40">
           ☆ 氷菓 ― Hyouka Fan Site ☆ わたし、気になります！ ☆ 古典部へようこそ ☆ 薔薇色の人生を ☆
         </div>
       </div>

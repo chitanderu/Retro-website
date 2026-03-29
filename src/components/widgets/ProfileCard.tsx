@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import TapeStrip from "@/components/decorations/TapeStrip";
 
@@ -15,18 +16,20 @@ export default function ProfileCard() {
 
       <div className="flex flex-col items-center gap-3">
         {/* Avatar */}
-        <div className="h-20 w-20 rounded-full border-2 border-dotted border-secondary/50 bg-base-300 p-1">
-          <div className="flex h-full w-full items-center justify-center rounded-full bg-primary/20 font-[family-name:var(--font-pixel-mplus)] text-2xl">
-            ✧
-          </div>
+        <div className="w-full overflow-hidden rounded-lg border-2 border-dotted border-secondary/50 bg-base-300 p-1">
+          <Image
+            src="https://img.yuuki.diy/Hyouka_logo.svg.png"
+            alt="古典部"
+            width={320}
+            height={120}
+            className="h-auto w-full rounded-md object-contain"
+          />
         </div>
 
         {/* Name */}
         <div className="text-center">
-          <h3 className="font-[family-name:var(--font-pixel-mplus)] text-base text-base-content">
-            古典部
-          </h3>
-          <p className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/50">
+          <h3 className="font-pixel text-base text-base-content">古典部</h3>
+          <p className="font-pixel text-xs text-base-content/50">
             Classics Club
           </p>
         </div>
@@ -39,7 +42,7 @@ export default function ProfileCard() {
         {/* Status */}
         <div className="flex items-center gap-1.5">
           <span className="inline-block h-2 w-2 rounded-full bg-success" />
-          <span className="font-[family-name:var(--font-pixel-mplus)] text-xs text-base-content/50">
+          <span className="font-pixel text-xs text-base-content/50">
             活動中
           </span>
         </div>
@@ -49,7 +52,7 @@ export default function ProfileCard() {
           {["京アニ", "推理"].map((name) => (
             <span
               key={name}
-              className="badge badge-outline badge-sm font-[family-name:var(--font-pixel-mplus)] text-xs"
+              className="badge badge-outline badge-sm font-pixel text-xs"
             >
               {name}
             </span>

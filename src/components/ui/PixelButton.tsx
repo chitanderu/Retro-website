@@ -27,7 +27,7 @@ export default function PixelButton({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={onClick}
-      className={`btn ${variantMap[variant]} font-[family-name:var(--font-pixel-mplus)] text-sm shadow-[2px_2px_0_0_rgba(0,0,0,0.1)] ${className}`}
+      className={`btn ${variantMap[variant]} font-pixel text-sm shadow-[2px_2px_0_0_rgba(0,0,0,0.1)] ${className}`}
     >
       {children}
     </motion.button>
